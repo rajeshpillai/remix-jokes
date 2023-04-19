@@ -111,6 +111,7 @@ export default function JokeRoute() {
 export function ErrorBoundary() {
   const { jokeId } = useParams();
   const error = useRouteError();
+  console.error(error);
 
   if (isRouteErrorResponse(error)) {
     if (error.status === 400) {
