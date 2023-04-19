@@ -4,6 +4,7 @@ import type {
 } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 import {
+  Form,
   isRouteErrorResponse,
   Link,
   useActionData,
@@ -78,7 +79,7 @@ export default function NewJokeRoute() {
   return (
     <div>
       <p>Add your own hilarious joke</p>
-      <form method="post">
+      <Form method="post">
         <div>
           <label>
             Name:{" "}
@@ -145,7 +146,7 @@ export default function NewJokeRoute() {
             Add
           </button>
         </div>
-      </form>
+      </Form>
     </div>
   );
 }
