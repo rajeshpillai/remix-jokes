@@ -13,6 +13,7 @@ export const loader = async () => {
   return json({ randomJoke });
 };
 
+
 export default function JokesIndexRoute() {
   const data = useLoaderData<typeof loader>();
 
